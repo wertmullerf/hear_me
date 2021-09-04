@@ -1,0 +1,290 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+body{
+  font-family:'Lato', 'sans-serif';
+  background-color: #fafafa;
+}
+
+a{
+  text-decoration: none;
+}
+
+p{
+  font-size: 1rem;
+  color: #000;
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  border-radius: 5px;
+  box-shadow: transparent
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background-color: #ff4000;
+  &:hover{
+    background-color: #ff400094;
+  }
+}
+
+
+#header{
+  width: 100%;
+  position: fixed;
+  background-color: #fafafa;
+  z-index: 100;
+}
+.navbar{
+  display: flex;
+  align-items: space-around;
+  .navbar-brand{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    letter-spacing: .1px;
+  }
+  .navBtn{
+    justify-content: center;
+  }
+}
+
+//HERO
+.hero{
+  height: 100vh;
+  background-image: url("../media/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .heroContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    strong{
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      font-size: 64px;
+    }
+  }
+  .shapes{
+    position: absolute;
+    right: 0;
+  }
+}
+
+.headphones{
+  height: 70vh;
+  .headphonesContent{
+    display: flex;
+    height: 100%;
+    .headphonesText{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      strong{
+        font-family: 'Poppins', sans-serif;
+        color: #000;
+        font-size: 48px;
+        width: 60%;
+        line-height: 55px;
+      }
+      p{
+        width: 80%;
+        margin: 20px 0 30px 0;
+      }
+      a{
+        width: fit-content;
+        padding: 10px 30px;
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+        transition: .5s;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Poppins', sans-serif;
+      }
+    }
+    .headphonesImg{
+      align-self: center;
+      img{
+        height: 650px;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+.blackWhite{
+  height: 65vh;
+  background-image: url("../media/man2.jpg");
+  background-position: center;
+  background-size: cover;
+  .blackWhiteContent{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    .blackWhiteText{
+      display: flex;
+      flex-direction: column;
+      align-items:flex-end;
+      justify-content: center;
+      margin-right: 1.5rem;
+      strong{
+        font-family: 'Poppins', sans-serif;
+        color: #fafafa;
+        font-size: 48px;
+        line-height: 55px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+      }
+      p{
+        width: 50%;
+        color: #fafafa;
+        text-align: end;
+      }
+    }
+  }
+}
+
+.review{
+  height: 50vh;
+}
+
+.footer{
+  background-image: url("../media/footer.jpg");
+  height: 35vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  .footerText{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    strong{
+      font-family: 'Poppins', sans-serif;
+      color: #fff;
+      font-size: 32px;
+      font-weight: 600;
+    }
+  }
+}
+.developer{
+  display: flex;
+  background-color: #000;
+  height: 5vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  span{
+    color: #fff;
+  }
+}
+
+#shop{
+  height: auto;
+  display: flex;
+  align-items: center;
+  .shopText{
+    flex-direction: column;
+    height: 100%;
+    justify-self: center;
+    strong{
+      font-family: 'Poppins', sans-serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: #000;
+      margin-bottom: 1rem;
+    }
+    p{
+      width: 70%;
+    }
+    .buyNow{
+      margin-top: 1rem;
+      display: flex;
+
+    }
+    span{
+      font-family: 'Poppins', sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      align-items: center;
+      margin-top: 1.3rem;
+      font-weight: 700;
+      color: #000;
+  
+    }
+    button{
+      width: fit-content;
+      padding: 10px 30px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none;
+      transition: .5s;
+      font-size: 16px;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      border: none;
+      margin-left: 2.5rem;
+    }
+  }
+}
+.circle{
+  display: flex;
+  margin-top: 1rem;
+  #orange{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ff4000;
+    margin-right: .4rem;
+    border: none;
+    animation: 1s;
+  }
+  #black{
+    width: 35px;
+    height: 435x;
+    border-radius: 50%;
+    background-color: #000;
+    margin-right: .4rem;
+    border: none;
+  }
+  #golden{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #9b881f;
+    border: none;
+  }
+  
+}
+
+.details{
+  height: 70vh;
+  position: relative;
+  background-color: #0A0A0C;
+  .details_image{
+    text-align: center;
+    img{
+      z-index: 100;
+    }
+  }
+  .details_text{
+    text-align: center;
+    h3{
+      font-family: 'Poppins', sans-serif;
+      color: #fafafa;
+      font-size: 48px;
+      line-height: 55px;
+      font-weight: 600;
+      margin: 1.5rem 0rem 1rem 0rem;
+    }
+    p{
+      color: #fff;
+      width: 40%;
+      margin: auto;
+    }
+  }
+}

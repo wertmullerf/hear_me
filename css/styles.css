@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+body {
+  font-family: 'Lato', 'sans-serif';
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 1rem;
+  color: #000;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  -webkit-box-shadow: transparent;
+          box-shadow: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #ff4000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ff400094;
+}
+
+#header {
+  width: 100%;
+  position: fixed;
+  background-color: #fafafa;
+  z-index: 100;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: space-around;
+      -ms-flex-align: space-around;
+          align-items: space-around;
+}
+
+.navbar .navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  letter-spacing: .1px;
+}
+
+.navbar .navBtn {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero {
+  height: 100vh;
+  background-image: url("../media/banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero .heroContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.hero .heroContent strong {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 64px;
+}
+
+.hero .shapes {
+  position: absolute;
+  right: 0;
+}
+
+.headphones {
+  height: 70vh;
+}
+
+.headphones .headphonesContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.headphones .headphonesContent .headphonesText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.headphones .headphonesContent .headphonesText strong {
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  font-size: 48px;
+  width: 60%;
+  line-height: 55px;
+}
+
+.headphones .headphonesContent .headphonesText p {
+  width: 80%;
+  margin: 20px 0 30px 0;
+}
+
+.headphones .headphonesContent .headphonesText a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 30px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.headphones .headphonesContent .headphonesImg {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.headphones .headphonesContent .headphonesImg img {
+  height: 650px;
+  margin-top: 1rem;
+}
+
+.blackWhite {
+  height: 65vh;
+  background-image: url("../media/man2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.blackWhite .blackWhiteContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+.blackWhite .blackWhiteContent .blackWhiteText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 1.5rem;
+}
+
+.blackWhite .blackWhiteContent .blackWhiteText strong {
+  font-family: 'Poppins', sans-serif;
+  color: #fafafa;
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.blackWhite .blackWhiteContent .blackWhiteText p {
+  width: 50%;
+  color: #fafafa;
+  text-align: end;
+}
+
+.review {
+  height: 50vh;
+}
+
+.footer {
+  background-image: url("../media/footer.jpg");
+  height: 35vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.footer .footerText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .footerText strong {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.developer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+  height: 5vh;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.developer span {
+  color: #fff;
+}
+
+#shop {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shop .shopText {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+#shop .shopText strong {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+#shop .shopText p {
+  width: 70%;
+}
+
+#shop .shopText .buyNow {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#shop .shopText span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.3rem;
+  font-weight: 700;
+  color: #000;
+}
+
+#shop .shopText button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 30px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  margin-left: 2.5rem;
+}
+
+.circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.circle #orange {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #ff4000;
+  margin-right: .4rem;
+  border: none;
+  -webkit-animation: 1s;
+          animation: 1s;
+}
+
+.circle #black {
+  width: 35px;
+  height: 435x;
+  border-radius: 50%;
+  background-color: #000;
+  margin-right: .4rem;
+  border: none;
+}
+
+.circle #golden {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #9b881f;
+  border: none;
+}
+
+.details {
+  height: 70vh;
+  position: relative;
+  background-color: #0A0A0C;
+}
+
+.details .details_image {
+  text-align: center;
+}
+
+.details .details_image img {
+  z-index: 100;
+}
+
+.details .details_text {
+  text-align: center;
+}
+
+.details .details_text h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #fafafa;
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: 600;
+  margin: 1.5rem 0rem 1rem 0rem;
+}
+
+.details .details_text p {
+  color: #fff;
+  width: 40%;
+  margin: auto;
+}
