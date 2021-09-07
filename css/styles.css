@@ -398,3 +398,131 @@ p {
   width: 40%;
   margin: auto;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  #header {
+    position: unset;
+  }
+  .shopIcon {
+    display: none;
+  }
+  .hero {
+    width: 100%;
+    background-position: center;
+  }
+  .headphones {
+    height: auto;
+    margin-top: 5rem;
+  }
+  .headphones .headphonesContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .headphones .headphonesContent .headphonesText strong {
+    width: 90%;
+  }
+  .headphones .headphonesContent .headphonesText p {
+    width: 90%;
+  }
+  .headphones .headphonesContent .headphonesImg img {
+    height: 400px;
+  }
+  .blackWhite {
+    height: 75vh;
+    background-position: center;
+  }
+  .blackWhite .blackWhiteContent .blackWhiteText {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blackWhite .blackWhiteContent .blackWhiteText strong {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    line-height: 2.5rem;
+    text-align: center;
+    width: 95%;
+  }
+  .blackWhite .blackWhiteContent .blackWhiteText p {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 1.5rem;
+    text-align: start;
+    width: 95%;
+  }
+  .details {
+    height: 100vh;
+  }
+  .details .details_text h3 {
+    -ms-grid-column-align: center;
+        justify-self: center;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    line-height: 2.5rem;
+    text-align: center;
+    width: 95%;
+  }
+  .details .details_text p {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 1.5rem;
+    text-align: center;
+    width: 95%;
+  }
+  #shop {
+    height: auto;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #shop .shopContent {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #shop .shopContent .shopText strong {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+  #shop .shopContent .shopText p {
+    width: 95%;
+    text-align: center;
+  }
+  #shop .shopContent .shopText .buyNow {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #shop .shopContent .circle {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 1rem;
+  }
+  #shop .shopImg img {
+    width: 100%;
+  }
+}

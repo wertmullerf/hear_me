@@ -1,0 +1,114 @@
+@media only screen and (min-width:320px) and (max-width:768px){
+  *{
+    box-sizing: border-box;
+  }
+  #header{
+    position: unset;
+  }
+  .shopIcon{
+    display: none;
+  }
+  .hero{
+    width: 100%;
+    background-position:center ;
+  }
+  .headphones{
+    height: auto;
+    margin-top: 5rem;
+    .headphonesContent{
+      display: flex;
+      flex-direction: column;
+      .headphonesText{
+        strong{
+          width: 90%;
+        }
+        p{
+          width: 90%;
+        }
+      }
+      .headphonesImg{
+        img{
+          height: 400px;
+        }
+      }
+    }
+  }
+  .blackWhite{
+    height: 75vh;
+    background-position: center;
+    .blackWhiteContent{
+      .blackWhiteText{
+        display: flex;
+        flex-direction: column;
+        strong{
+          justify-self: center;
+          font-size: 2.5rem;
+          margin-top: 1rem;
+          line-height: 2.5rem;
+          text-align: center;
+          width: 95%;
+        }
+        p{
+          align-self: flex-start;
+          margin-left: 1.5rem;
+          text-align: start;
+          width: 95%;
+        }
+      }
+    }
+  }
+  .details{
+    height: 100vh;
+    .details_text{
+      h3{
+        justify-self: center;
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        line-height: 2.5rem;
+        text-align: center;
+        width: 95%;
+      }
+      p{
+        align-self: flex-start;
+        margin-top: 1.5rem;
+        text-align: center;
+        width: 95%;
+      }
+    }
+  }
+  #shop{
+    height: auto;
+    width: fit-content;
+    flex-direction: column;
+    .shopContent{
+      order: 1;
+      .shopText{
+        strong{
+          font-size: 2.5rem;
+          line-height: 2.5rem;
+          display: flex;
+          text-align: center;
+        }
+        p{
+          width: 95%;
+          text-align: center;
+        }
+        .buyNow{
+          justify-content: center;
+        }
+      }
+      .circle{
+        justify-content: center;
+        margin-bottom: 1rem;
+      }
+    }
+    .shopImg{
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+}
+
+
