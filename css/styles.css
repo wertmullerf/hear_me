@@ -295,11 +295,8 @@ p {
   width: 70%;
 }
 
-#shop .shopText .buyNow {
+#shop .shopText .shopPrice {
   margin-top: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 #shop .shopText span {
@@ -329,6 +326,12 @@ p {
   font-family: 'Poppins', sans-serif;
   border: none;
   margin-left: 2.5rem;
+}
+
+#shop .shopText button:hover {
+  border: 1px solid #000;
+  background-color: transparent;
+  color: #000;
 }
 
 .circle {
@@ -399,6 +402,193 @@ p {
   margin: auto;
 }
 
+.btn-close {
+  background-color: transparent !important;
+  cursor: pointer !important;
+}
+
+.color {
+  background-color: blue;
+}
+
+.hidden {
+  display: none;
+}
+
+.close-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border: none;
+  background: transparent;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.vaciar-btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 30px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+  margin-left: 2.5rem;
+}
+
+#product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#product .cartText span {
+  color: #000;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+#product .cartText p {
+  font-size: 14px;
+  width: 90%;
+}
+
+.tableProduct img {
+  margin-left: -.8rem;
+}
+
+.tablePrice p {
+  font-size: 1.2rem;
+}
+
+.tableAmmount input {
+  width: 30px;
+}
+
+.tableAmmount button {
+  display: inline;
+  margin-left: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.productInput {
+  width: 100%;
+  height: 100%;
+}
+
+.btnBuy {
+  padding: 10px 30px;
+  background-color: rgba(30, 235, 47, 0.767);
+  color: #fff;
+  border: transparent;
+  margin-left: -.8rem;
+  margin-top: 1rem;
+}
+
+.btnRemove {
+  padding: 10px 30px;
+  background-color: rgba(235, 30, 30, 0.822);
+  color: #fff;
+  border: transparent;
+  margin-left: -.8rem;
+  margin-top: 1rem;
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+#order {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#heroShop {
+  height: 60vh;
+  background-image: url("../media/bannerShop.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#heroShop span {
+  color: #fafafa;
+  font-size: 72px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: 600;
+}
+
+#lista-productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#lista-productos .card {
+  margin: 20px;
+}
+
+#lista-productos .agregar-carrito {
+  padding: 8px 15px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  border: transparent;
+}
+
+.card-price {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.bi-bag {
+  font-size: 18px;
+}
+
+.btn-primary {
+  width: 100%;
+  border-radius: 0px;
+  margin: 10px 0px 10px 0px;
+}
+
+.btn-danger {
+  width: 100%;
+  border-radius: 0px;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   * {
     -webkit-box-sizing: border-box;
@@ -466,7 +656,7 @@ p {
     width: 95%;
   }
   .details {
-    height: 100vh;
+    height: auto;
   }
   .details .details_text h3 {
     -ms-grid-column-align: center;
