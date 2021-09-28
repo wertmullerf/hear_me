@@ -1,15 +1,18 @@
 let headphones = document.getElementById('black_headphone')
 
-
-function black(){
-  headphones.src = "media/black_headphones_web.png"
-}
-function orange(){
+$('#orange').click(()=>{
   headphones.src = "media/orange_headphones_web.png"
-}
+})
 
-function golden(){
+$('#black').click(()=>{
+  headphones.src = "media/black_headphones_web.png"
+})
+
+$('#golden').click(()=>{
   headphones.src = "media/golden_headphones_web.png"
-}
+})
 
 
+$('.caseTitle').mouseenter(()=>{
+  alert("This is not in stock")
+})
