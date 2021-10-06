@@ -15,7 +15,21 @@ class Carrito{
             id : producto.querySelector('button').getAttribute('data-id'),
             cantidad: 1
         }
-        this.insertarCarrito(infoProducto)
+        let productosLS = this.obtenerProductosLocalStorage()
+        productosLS.forEach(function(productoLS){
+            if(productoLS.id === infoProducto.id){
+                productosLS = productoLS.id
+            }
+        })
+        if(productosLS === infoProducto.id){
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'This product has already been added !',
+            })
+        }else{
+            this.insertarCarrito(infoProducto)
+        }
     }
     insertarCarrito(producto){
         const row = document.createElement('tr')
@@ -107,6 +121,11 @@ class Carrito{
 
     vaciarLocalStorage(){
         localStorage.clear()
+    }
+    
+    procesarPedido(){
+        e.preventDefault()
+        location.href = "./payment.html"
     }
 }
 

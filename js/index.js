@@ -12,7 +12,3 @@ $('#golden').click(()=>{
   headphones.src = "media/golden_headphones_web.png"
 })
 
-
-$('.caseTitle').mouseenter(()=>{
-  alert("This is not in stock")
-})
