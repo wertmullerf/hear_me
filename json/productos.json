@@ -1,0 +1,65 @@
+[
+  {
+    "product" : "BEATS SOLO3 WIRELESS - BLACK",
+    "description" : "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.",
+    "price" : 199,
+    "img" : "../media/product1.jpg",
+    "id": 1
+  },
+  {
+    "product" : "BEATS SOLO3 WIRELESS - RED",
+    "description" : "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.",
+    "price" : 199,
+    "img" : "../media/product2.jpg",
+    "id": 2
+  },
+  {
+    "product" : "BEATS SOLO3 WIRELESS - GOLDEN",
+    "description" : "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.",
+    "price" : 199,
+    "img" : "../media/product3.jpg",
+    "id": 3
+  },
+  {
+    "product" : "BEATS SOLO3 WIRELESS - BLUE",
+    "description" : "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.",
+    "price" : 199,
+    "img" : "../media/product5.jpg",
+    "id": 4
+  },
+  {
+    "product" : "BEATS SOLO3 WIRELESS - WHITE",
+    "description" : "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.",
+    "price" : 199,
+    "img" : "../media/product6.jpg",
+    "id": 5
+  },
+  {
+    "product" : "BEATS SOLO3 WIRELESS - BEIGE",
+    "description" : "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.",
+    "price" : 199,
+    "img" : "../media/product7.jpg",
+    "id": 6
+  },
+  {
+    "product" : "BEATS EARBUDS - BLACK",
+    "description" : "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.",
+    "price" : 99,
+    "img" : "../media/product8.jpg",
+    "id": 7
+  },
+  {
+    "product" : "BEATS SOLO3 WIRELESS - SKY BLUE",
+    "description" : "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.",
+    "price" : 199,
+    "img" : "../media/product9.jpg",
+    "id": 8
+  },
+  {
+    "product" : "BEATS SOLO3 WIRELESS - CYAN",
+    "description" : "The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.",
+    "price" : 199,
+    "img" : "../media/product10.jpg",
+    "id": 9
+  }
+]

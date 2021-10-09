@@ -125,7 +125,7 @@ class Carrito{
     
     procesarPedido(){
         e.preventDefault()
-        location.href = "./payment.html"
+        location.href = "payment.html"
     }
 }
 

@@ -214,7 +214,7 @@ p{
       color: #000;
   
     }
-    button{
+    a{
       width: fit-content;
       padding: 10px 30px;
       background-color: #000;
@@ -469,5 +469,13 @@ p{
 
 
 .payment{
-  height: 100vh;
+  height: 55vh;
+  .payment_content{
+    margin-top: 10vh;
+  }
+}
+
+#payment_header{
+  width: 100% !important;
+  background-color: #f8f9fa;
 }
