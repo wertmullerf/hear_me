@@ -1,5 +1,4 @@
 class Carrito{
-    //add product to cart
     comprarProducto(e){
         e.preventDefault()
         if(e.target.classList.contains('agregar-carrito')){
@@ -47,14 +46,14 @@ class Carrito{
         this.guardarProductosLocalStorage(producto)
     }
     eliminarProducto(e){
-        e.preventDefault()
-        let producto, productoID
+        e.preventDefault();
+        let producto, productoID;
         if(e.target.classList.contains('borrar-producto')){
-            e.target.parentElement.parentElement.remove()
-            producto =  e.target.parentElement.parentElement
-            productoID = producto.querySelector('button').getAttribute('data-id')
+            e.target.parentElement.parentElement.remove();
+            producto = e.target.parentElement.parentElement;
+            productoID = producto.querySelector('a').getAttribute('data-id');
         }
-        this.eliminarProductoLocalStorage(productoID)
+        this.eliminarProductoLocalStorage(productoID);
     }
     vaciarCarrito(e){
         e.preventDefault()
@@ -68,18 +67,13 @@ class Carrito{
 
     guardarProductosLocalStorage(producto){
         let productos;
-        //Toma valor de un arreglo con datos del Local Storage
         productos = this.obtenerProductosLocalStorage();
-        //Agregar el producto al carrito
         productos.push(producto);
-        //Agregamos al Local Storage
         localStorage.setItem('productos', JSON.stringify(productos));
     }
 
     obtenerProductosLocalStorage(){
         let productoLS;
-
-        //Comprobar si hay algo en LS
         if(localStorage.getItem('productos') === null){
             productoLS = [];
         } else {
@@ -91,12 +85,12 @@ class Carrito{
     eliminarProductoLocalStorage(productoID){
         let productosLS
         productosLS = this.obtenerProductosLocalStorage()
-        productosLS.forEach(function(productoLs, index){
-            if(productosLS.id === productoID){
+        productosLS.forEach(function(productoLS, index){
+            if(productoLS.id === productoID){
                 productosLS.splice(index, 1)
             }
         })
-        localStorage.setItem('productos', JSON.stringify(productosLS))
+        localStorage.setItem('productos', JSON.stringify(productosLS));
     }
 
     leerLocalStorage(){

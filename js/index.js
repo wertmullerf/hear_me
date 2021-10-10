@@ -12,3 +12,5 @@ $('#golden').click(()=>{
   headphones.src = "media/golden_headphones_web.png"
 })
 
+
+$('.heroTitle').fadeIn()

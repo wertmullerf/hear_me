@@ -8,6 +8,10 @@
           box-sizing: content-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Lato', 'sans-serif';
   background-color: #fafafa;
@@ -15,6 +19,10 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.bi-bag {
+  color: #000;
 }
 
 p {
@@ -602,6 +610,10 @@ p {
   background-color: #f8f9fa;
 }
 
+#carrito {
+  margin-left: -20rem;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   * {
     -webkit-box-sizing: border-box;
@@ -727,5 +739,26 @@ p {
   }
   #shop .shopImg img {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1630px) {
+  .details {
+    height: 80vh;
+  }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+  .hero {
+    background-position: center;
+  }
+  .headphones {
+    height: auto;
+  }
+  .headphones .headphonesImg img {
+    width: 550px;
+  }
+  .details {
+    height: 80vh;
   }
 }
