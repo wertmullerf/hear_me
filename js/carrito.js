@@ -117,9 +117,21 @@ class Carrito{
         localStorage.clear()
     }
     
-    procesarPedido(){
+    procesarPedido(e){
         e.preventDefault()
-        location.href = "payment.html"
+        if(this.obtenerProductosLocalStorage().length === 0){
+            Swal.fire({
+                icon: 'info',
+                title: 'Oops...',
+                text: "You don't have anything in the bag",
+            })
+        }else{
+            Swal.fire({
+                icon: 'success',
+                title: 'Great',
+                text: "Your order was successful",
+            })
+        }
     }
 }
 

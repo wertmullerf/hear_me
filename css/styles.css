@@ -610,8 +610,8 @@ p {
   background-color: #f8f9fa;
 }
 
-#carrito {
-  margin-left: -20rem;
+.bag {
+  margin-left: -20rem !important;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
